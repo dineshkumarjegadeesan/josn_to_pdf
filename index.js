@@ -11,6 +11,7 @@
         const filepath = path.join(process.cwd(),'templates',`${tamplateName}.hbs`)
         const html = await fs.readFile(filepath,'utf-8')
         return hbs.compile(html)(data)
+     
  };
 
  (async ()=>{
@@ -29,6 +30,7 @@
             printBackground:true
         })
         console.log("Done.....!");
+        console.log("git demo")
             browser.close();
             process.exit();
     } catch (e) {
